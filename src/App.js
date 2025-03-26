@@ -11,6 +11,7 @@ export default function App() {
   const [timeLeft, setTimeLeft] = useState(10); // 10 seconds timer for each question
 
   const [score, setScore] = useState(0);
+  const [isScoreHigh, setIsScoreHigh] = useState(false);
   const [showScore, setShowScore] = useState(false);
 
   useEffect(() => {
@@ -46,6 +47,11 @@ export default function App() {
       setTimeLeft(10);
     } else {
       setEnableQuiz(false);
+      if ((score / currentCategory?.questions?.length) > 0.5) {
+        setIsScoreHigh(true);
+      } else {
+        setIsScoreHigh(false);
+      }
       setShowScore(true);
     }
   };
@@ -61,9 +67,15 @@ export default function App() {
     <div className="App">
       {
         showScore ? (
-          <div className="score-section">
-            You scored {score} out of {currentCategory?.questions?.length}
-          </div>
+          <>
+            {isScoreHigh ? <div className="high-score">Congratulations</div> : <div className="low-score">Keep Practicing</div>}
+            <div className="score-section">
+              Your score {(score / currentCategory?.questions?.length).toFixed(2) * 100} %
+            </div>
+            <div className="score-section">
+              You scored {score} out of {currentCategory?.questions?.length}
+            </div>
+          </>
         ) : (
           <>
             {showCategory ? (

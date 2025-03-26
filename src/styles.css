@@ -111,7 +111,19 @@
   padding: 10px;
 }
 
+.high-score {
+  font-size: 1.5em;
+  margin: 10px;
+  color: green;
+}
+
+.low-score {
+  font-size: 1.5em;
+  margin: 10px;
+  color: orange;
+}
+
 .score-section {
   font-size: 1.5em;
-  color: green;
+  margin: 10px;
 }
