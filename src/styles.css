@@ -1,0 +1,53 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.welcome-heading {
+  font-family: Outfit;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.welcome-heading-text {
+  font-weight: 500;
+}
+
+.welcome-heading-quiz {
+  font-weight: 250;
+  color: rgba(185, 43, 93, 1);
+}
+
+.welcome-heading-mania {
+  font-weight: 700;
+  color: rgba(185, 43, 93, 1);
+}
+
+.welcome-info {
+  background-color: rgba(217, 217, 217, 0.3);
+  text-align: left;
+  padding: 10px;
+}
+
+.welcome-info-text {
+
+}
+
+.welcome-info-rules {
+  color: rgba(185, 43, 93, 1);
+}
+
+.welcome-name-label {
+  color: rgba(55, 48, 82, 1);
+}
+
+.welcome-name-input {
+  width: 600;
+  border-radius: 8px;
+  padding-top: 13px;
+  padding-right: 21px;
+  padding-bottom: 13px;
+  padding-left: 21px;
+  gap: 8px;
+  border-width: 1px;
+}
