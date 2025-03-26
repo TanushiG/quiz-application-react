@@ -1,9 +1,22 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  height: 100%;
 }
+
+.welcome-form-container {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .welcome-heading {
   font-family: Outfit;
+  font-weight: 500;
   font-size: 64px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -29,25 +42,76 @@
   padding: 10px;
 }
 
-.welcome-info-text {
-
-}
-
 .welcome-info-rules {
   color: rgba(185, 43, 93, 1);
 }
 
+.welcome-name {
+  text-align: left;
+  margin: 10px 0;
+}
+
 .welcome-name-label {
   color: rgba(55, 48, 82, 1);
+  margin-bottom: 10px;
 }
 
 .welcome-name-input {
-  width: 600;
   border-radius: 8px;
-  padding-top: 13px;
-  padding-right: 21px;
-  padding-bottom: 13px;
-  padding-left: 21px;
-  gap: 8px;
+  padding:10px;
+  width: -webkit-fill-available;
   border-width: 1px;
+}
+
+.question-section {
+  color: rgba(55, 48, 82, 1);
+  text-align: left;
+  margin: 10px 0;
+  font-size: 16px;
+  display: grid;
+}
+
+.question-count {
+  margin: 10px 0;
+  float: left;
+}
+
+.question-text {
+  margin: 10px;
+}
+
+.answer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-section button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  border-color: rgba(217, 217, 217, 0.3);
+}
+
+.action-button {
+  text-align: left;
+}
+
+.action-button button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgba(185, 43, 93, 1);
+  border-color: rgba(185, 43, 93, 1);
+}
+
+.timer {
+  float: right;
+  background-color: rgba(217, 217, 217, 0.3);
+  padding: 10px;
+}
+
+.score-section {
+  font-size: 1.5em;
+  color: green;
 }
