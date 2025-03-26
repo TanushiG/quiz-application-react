@@ -27,6 +27,18 @@
           ],
           "correctAnswer": "B",
           "timeLimit": 10
+        },
+        {
+          "id": "q3",
+          "question": "When an operator’s value is NULL, the typeof returned by the unary operator is?",
+          "options": [
+            "A. boolean",
+            "B. undefined",
+            "C. object",
+            "D. integer"
+          ],
+          "correctAnswer": "C",
+          "timeLimit": 10
         }
       ]
     },
@@ -56,6 +68,18 @@
             "D. Amazon"
           ],
           "correctAnswer": "C",
+          "timeLimit": 10
+        },
+        {
+          "id": "q3",
+          "question": "How is interpolation in angular 2 done?",
+          "options": [
+            "A. {}",
+            "B. {{}}",
+            "C. {{{}}}",
+            "D. !{}"
+          ],
+          "correctAnswer": "B",
           "timeLimit": 10
         }
       ]
